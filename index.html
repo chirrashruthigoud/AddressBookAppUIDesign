@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Address Book App</title>
+    <script defer src="./javascript/AddressBook.js"></script>
+    <script defer src="./javascript/FormValidate.js"></script>
+</head>
+
+<body>
+    <!-- UC1 AddressBook Form UI-->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="./assets/logo.jpg">
+            <div>
+                <span class="add-text">ADDRESS</span><br>
+                <span class="add-text add-book">BOOK</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="form-content">
+
+    </div>
+    <div class="form-content">
+        <!-- UC2 Add form header -->
+        <form class="form">
+            <div class="form-head">
+                <div class="form-heading">PERSON ADDRESS FORM</div>
+                <div class="cancel-button">
+                    &times
+                </div>
+            </div>
+                <div class="form-start">
+                    <div class="row-content">
+                        <label class="label text" for="name">Full Name</label><br>
+                        <input class="input" type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <error-output class="text-error"></error-output>
+                    </div>
+                    <div class="row-content">
+                        <label class="label text" for="address">Address</label><br>
+                        <input class="input" type="text" id="address" name="address" placeholder="Enter your address" required>
+                        <error-output class="address-error"></error-output>
+                    </div>
+            
+            
+                    <div class="column-content">
+                        <div>
+                            <label class="label text" for="city">City</label><br>
+                            <select id="city" name="city">
+                                <option aria-placeholder="Select City">Select City</option>
+                                <option value="1">Mumbai</option>
+                                <option value="2">Hyderabad</option>
+                                <option value="3">Pune</option>
+                                <option value="4">Banglore</option>
+                                <option value="5">New Delhi</option>
+                                <option value="6">Jaipur</option>
+                                <option value="7">Ahmadabad</option>
+                                <option value="8">Kolkata</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="label text" for="state">State</label><br>
+                            <select id="state" name="state ">
+                                <option value="">Select State</option>
+            
+                                <option value="MH">Maharastra</option>
+                                <option value="GJ">Gujrat</option>
+                                <option value="TS">Tamilnadu</option>
+                                <option value="KN">Rajasthan</option>
+                                <option value="ND">New Delhi</option>
+                                <option value="KR">Madhyapradesh</option>
+                                <option value="WB">West Bengal</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="label text zip-text" for="zipcode ">Zipcode</label></br>
+                            <input class="input" id="zipcode " name="zipcode"></input>
+                        </div>
+                    </div>
+                    <div class="row-content">
+                        <label class="label text" for="phone">Phone</label><br>
+                        <input class="input" type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        <error-output class="phone-error"></error-output>
+                    </div>
+                    <div class="buttonParent">
+                        <div class="">
+                            <button type="submit" class="button addButton" id="addButton">Submit</button>
+                            <button type="reset" class="resetButton button">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
